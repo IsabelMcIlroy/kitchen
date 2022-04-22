@@ -5,6 +5,5 @@ egg.addEventListener('click', (e) => {
     crackEgg();
 })
 function crackEgg() {
-    document.getElementById('egg').classList.add("bouncing");
     document.getElementById('Crack').classList.remove("hide");
 }

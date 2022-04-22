@@ -10,9 +10,7 @@ body{
 .eggContainer{
     width: 300px;
     height: 150px;
-    margin: auto; 
-}
-#bouncing{
+    margin: auto;
     animation: bounce .5s;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.5, .7, .05, .5);
@@ -26,6 +24,6 @@ body{
         transform: translate3d(0, 0px, 0);
     }
     to {
-        transform: translate3d(0, -200px, 0);
+        transform: translate3d(0, -100px, 0);
     }
 }
