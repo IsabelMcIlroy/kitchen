@@ -10,9 +10,12 @@ body{
 .eggContainer{
     width: 400px;
     height: 250px;
-    margin: auto;
-    
+    margin: auto; 
 }
+.hide{
+    display: none;
+}
+/* Bounce Egg */
 .bounce{
     animation: bounce .5s;
     animation-direction: alternate;
@@ -27,9 +30,7 @@ body{
         transform: translate3d(0, -100px, 0);
     }
 }
-.hide{
-    display: none;
-}
+/* breaks egg open */
 .topOpen{
     animation: top 1s both;
     transform-origin: bottom;
