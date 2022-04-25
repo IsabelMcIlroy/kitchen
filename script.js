@@ -12,6 +12,7 @@ function bounceEgg() {
     crackEggThree();
     crackEggFour();
     crackEggFive();
+    breakEgg();
 }
 
 function crackEggOne() {
@@ -52,4 +53,21 @@ function crackEggTwo() {
  }
   
  setTimeout(crack, 5000); 
+ }
+
+ function breakEgg() {
+    const crack = function() { 
+        document.getElementById('Egg').classList.add("hide"); 
+        document.getElementById('CrackOne').classList.add("hide");
+        document.getElementById('CrackTwo').classList.add("hide");
+        document.getElementById('CrackThree').classList.add("hide");
+        document.getElementById('CrackFour').classList.add("hide");
+        document.getElementById('CrackFive').classList.add("hide");
+        document.getElementById('CrackedTop').classList.remove("hide");
+        document.getElementById('CrackedTop').classList.add("topOpen");
+        document.getElementById('CrackedBottom').classList.remove("hide");
+        document.getElementById('CrackedBottom').classList.add("bottomOpen");
+ }
+  
+ setTimeout(crack, 6000); 
  }

@@ -14,19 +14,46 @@ body{
     
 }
 .bounce{
-   animation: bounce .5s;
+    animation: bounce .5s;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.5, .7, .05, .5);
     animation-iteration-count: 12; 
 }
-.hide {
-    display: none;
-}
-@keyframes bounce {
+@keyframes bounce{
     from {
         transform: translate3d(0, 0px, 0);
     }
     to {
         transform: translate3d(0, -100px, 0);
+    }
+}
+.hide{
+    display: none;
+}
+.topOpen{
+    animation: top 1s both;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes top{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(-45deg);
+    }
+}
+.bottomOpen{
+    animation: bottom 2s both;
+    transform-origin: bottom;
+    transform-box: fill-box;
+    position: absolute;
+}
+@keyframes bottom{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(45deg);
     }
 }
