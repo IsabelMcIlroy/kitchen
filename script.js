@@ -1,3 +1,4 @@
+// Egg Page
 const egg = document.getElementById('egg');  
 
 egg.addEventListener('click', (e) => {
