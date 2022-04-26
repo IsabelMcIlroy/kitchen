@@ -68,9 +68,7 @@ function crackEggTwo() {
         document.getElementById('CrackedTop').classList.add("topOpen");
         document.getElementById('CrackedBottom').classList.remove("hide");
         document.getElementById('CrackedBottom').classList.add("bottomOpen");
-        document.getElementById('Impossible').classList.remove("hide");
-        document.getElementById('Hard').classList.remove("hide");
-        document.getElementById('Easy').classList.remove("hide");
+        document.getElementById('enter').classList.remove("hide");
  }
   
  setTimeout(crack, 6000); 
