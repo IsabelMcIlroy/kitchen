@@ -68,6 +68,20 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+/* chicken */
+.leave{
+    animation: leave 5s both;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes leave{
+    from {
+        transform: translate3d(0, -40px, 0);
+    }
+    to {
+        transform: translate3d(-600px, -150px, 0);
+    }
+}
 
 /* kitchen */
 .kitchen{
@@ -107,6 +121,7 @@ body{
         transform: translate3d(-5px, -6px, 0);
     }
 }
+/* baking muffins */
 #Muffins{
     animation: rise 5s;
     animation-iteration-count: infinite;
@@ -119,5 +134,48 @@ body{
     }
     to {
         transform: translate3d(15px, -8px, 0);
+    }
+}
+/* Boiling pot */
+#Pot{
+    animation: shake .5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes shake{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(2deg);
+    }
+}
+#PotLid{
+    animation: popTop .5s;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+@keyframes popTop{
+    from {
+        transform: translate3d(0, 0px, 0);
+    }
+    to {
+        transform: translate3d(0, -1px, 0);
+    }
+}
+#Drips{
+    animation: drip .5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes drip{
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 4px, 0);
     }
 }
