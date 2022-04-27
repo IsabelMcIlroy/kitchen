@@ -136,6 +136,21 @@ body{
         transform: translate3d(-5px, -6px, 0);
     }
 }
+#Dough{
+    animation: rolling .5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+@keyframes rolling{
+    from {
+        transform:scaleY(1)
+    }
+    to {
+        transform: scaleY(1.1)
+    }
+}
 /* baking muffins */
 #Muffins{
     animation: rise 5s;
