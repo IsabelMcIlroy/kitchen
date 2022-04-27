@@ -105,6 +105,21 @@ body{
         transform: rotateY(-180deg);
     }
 }
+#CakeBatter{
+    animation: cakeMix .5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes cakeMix{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(20deg);
+    }
+}
 /* roll rolling pin */
 #RollingPin{
     animation: roll .5s;
@@ -177,5 +192,20 @@ body{
     }
     to {
         transform: translate3d(0, 4px, 0);
+    }
+}
+/* Tea Kettle */
+#Steam{
+    animation: riseSteam .5s;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+@keyframes riseSteam{
+    from {
+        transform: translate3d(0, 0px, 0);
+    }
+    to {
+        transform: translate3d(-1px, -1px, 0);
     }
 }
