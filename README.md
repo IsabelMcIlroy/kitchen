@@ -1,2 +1,2 @@
-# justForFun
+# kitchen
  playing around with javscript
