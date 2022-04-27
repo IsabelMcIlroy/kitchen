@@ -1,2 +1,2 @@
 # kitchen
- playing around with javscript
+ playing around with animations
