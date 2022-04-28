@@ -196,17 +196,17 @@ body{
     }
 }
 #Drips{
-    animation: drip 1s;
+    animation: drip 2s;
     animation-iteration-count: infinite;
     transform-origin: top;
     transform-box: fill-box;
 }
 @keyframes drip{
     from {
-        transform: scaleY(1)
+        transform: scaleY(0)
     }
     to {
-        transform: scaleY(1.2)
+        transform: scaleY(1)
     }
 }
 /* Tea Kettle */
